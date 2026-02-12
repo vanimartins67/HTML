@@ -36,3 +36,7 @@ button{
     border-radius: 20px;
     margin: auto;
 }
+ table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;}
