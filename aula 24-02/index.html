@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<form>
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>Qual sua linguagem preferida?</p>
+<form action:"page.php">
+    <input type="radio" id="html" name=" fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+
+    <input type="radio" id="js" name="fav_language" value="JavaScript">
+    <label for="js">JavaScript</label><br>
+</form>
+
+<br><button type="reset">Reset</button><br><br>
+
+<form>
+    <input type="checkbox" id="html" name="fav_language" value="html">
+    <label for="html"> html</label><br>
+
+    <input type="checkbox" id="css" name="fav_language" value="css">
+    <label for="css"> css</label><br>
+
+    <input type="checkbox" id="js" name="fav_language" value="js">
+    <label for="js"> JavaScript</label><br>
+
+    
+</form>
+
+<form>
+    <fieldset>
+        <legend>Escolha seu gênero:</legend>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label><br>    
+</form>
+
+<form>
+    <fieldset id="email">
+        <legend>E-mail</legend>
+        <input type="email" name="email" placeholder="Digite seu e-mail">
+    </fieldset>
+</form>
+
+<form>
+    <fieldset id="senha">
+        <legend>Senha</legend>
+        <input type="password" name="senha" placeholder="Digite sua senha">
+    </fieldset>
+</form>
