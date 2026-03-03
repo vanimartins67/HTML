@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Atividade Formulário</h1>
+    
+    <form action="send.php" method="POST">
+        <!-- Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Primeiro nome:<br>
+                <input type="text" name="primeiro_nome" required>
+            </label><br><br>
+            
+            <label>Último nome:<br>
+                <input type="text" name="ultimo_nome" required>
+            </label><br><br>
+            
+            <label>Data de nascimento:<br>
+                <input type="date" name="data_nascimento">
+            </label><br><br>
+            
+            <label>CPF:<br>
+                <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00">
+            </label><br><br>
+            
+            <label>E-mail:<br>
+                <input type="email" name="email">
+            </label><br><br>
+            
+            <label>Estado civil:<br>
+                <input type="radio" name="estado_civil" value="solteiro"> Solteiro<br>
+                <input type="radio" name="estado_civil" value="casado"> Casado<br>
+                <input type="radio" name="estado_civil" value="divorciado"> Divorciado<br>
+                <input type="radio" name="estado_civil" value="viuvo"> Viúvo
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Endereço -->
+        <fieldset>
+            <legend>Endereço</legend>
+            <label>Rua:<br>
+                <input type="text" name="rua">
+            </label><br><br>
+            
+            <label>Número:<br>
+                <input type="text" name="numero">
+            </label><br><br>
+            
+            <label>Bairro:<br>
+                <input type="text" name="bairro">
+            </label><br><br>
+            
+            <label>Cidade:<br>
+                <input type="text" name="cidade">
+            </label><br><br>
+            
+            <label>CEP:<br>
+                <input type="text" name="cep" maxlength="9" placeholder="00000-000">
+            </label><br><br>
+            
+            <label>Tipo de residência:<br>
+                <input type="radio" name="tipo_residencia" value="propria"> Própria<br>
+                <input type="radio" name="tipo_residencia" value="alugada"> Alugada<br>
+                <input type="radio" name="tipo_residencia" value="financiada"> Financiada<br>
+                <input type="radio" name="tipo_residencia" value="cedida"> Cedida
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Dados Financeiros -->
+        <fieldset>
+            <legend>Dados Financeiros</legend>
+            <label>Renda mensal:<br>
+                <input type="number" name="renda" step="0.01" min="0">
+            </label><br><br>
+            
+            <label>Profissão:<br>
+                <input type="text" name="profissao">
+            </label><br><br>
+            
+            <label>Banco:<br>
+                <input type="text" name="banco">
+            </label><br><br>
+            
+            <label>Agência:<br>
+                <input type="text" name="agencia">
+            </label><br><br>
+            
+            <label>Conta:<br>
+                <input type="text" name="conta">
+            </label><br><br>
+            
+            <label>Possui cartão de crédito?<br>
+                <input type="radio" name="cartao_credito" value="sim"> Sim<br>
+                <input type="radio" name="cartao_credito" value="nao"> Não
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Dados Comerciais -->
+        <fieldset>
+            <legend>Dados Comerciais</legend>
+            <label>Empresa:<br>
+                <input type="text" name="empresa">
+            </label><br><br>
+            
+            <label>CNPJ:<br>
+                <input type="text" name="cnpj" placeholder="00.000.000/0000-00">
+            </label><br><br>
+            
+            <label>Telefone comercial:<br>
+                <input type="tel" name="tel_comercial">
+            </label><br><br>
+            
+            <label>Cargo:<br>
+                <input type="text" name="cargo">
+            </label><br><br>
+            
+            <label>Tempo na empresa (meses):<br>
+                <input type="number" name="tempo_empresa" min="0">
+            </label><br><br>
+            
+            <label>Tipo de vínculo:<br>
+                <input type="radio" name="vinculo" value="clt"> CLT<br>
+                <input type="radio" name="vinculo" value="pj"> PJ<br>
+                <input type="radio" name="vinculo" value="estagiario"> Estagiário<br>
+                <input type="radio" name="vinculo" value="autonomo"> Autônomo
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Cadastro Veículo -->
+        <fieldset>
+            <legend>Cadastro Veículo</legend>
+            <label>Marca:<br>
+                <input type="text" name="veiculo_marca">
+            </label><br><br>
+            
+            <label>Modelo:<br>
+                <input type="text" name="veiculo_modelo">
+            </label><br><br>
+            
+            <label>Ano:<br>
+                <input type="number" name="veiculo_ano" min="1900" max="2024">
+            </label><br><br>
+            
+            <label>Placa:<br>
+                <input type="text" name="veiculo_placa" maxlength="7">
+            </label><br><br>
+            
+            <label>Cor:<br>
+                <input type="text" name="veiculo_cor">
+            </label><br><br>
+            
+            <label>Tipo de combustível:<br>
+                <input type="radio" name="combustivel" value="gasolina"> Gasolina<br>
+                <input type="radio" name="combustivel" value="etanol"> Etanol<br>
+                <input type="radio" name="combustivel" value="diesel"> Diesel<br>
+                <input type="radio" name="combustivel" value="flex"> Flex<br>
+                <input type="radio" name="combustivel" value="eletrico"> Elétrico
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Cadastro Imóvel -->
+        <fieldset>
+            <legend>Cadastro Imóvel</legend>
+            <label>Tipo de imóvel:<br>
+                <input type="radio" name="imovel_tipo" value="casa"> Casa<br>
+                <input type="radio" name="imovel_tipo" value="apartamento"> Apartamento<br>
+                <input type="radio" name="imovel_tipo" value="terreno"> Terreno<br>
+                <input type="radio" name="imovel_tipo" value="comercial"> Comercial
+            </label><br><br>
+            
+            <label>Área (m²):<br>
+                <input type="number" name="imovel_area" min="0">
+            </label><br><br>
+            
+            <label>Número de quartos:<br>
+                <input type="number" name="imovel_quartos" min="0">
+            </label><br><br>
+            
+            <label>Valor do imóvel:<br>
+                <input type="number" name="imovel_valor" step="0.01" min="0">
+            </label><br><br>
+            
+            <label>Possui garagem?<br>
+                <input type="radio" name="imovel_garagem" value="sim"> Sim<br>
+                <input type="radio" name="imovel_garagem" value="nao"> Não
+            </label><br><br>
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Dados Cônjuge -->
+        <fieldset>
+            <legend>Dados Cônjuge</legend>
+            <label>Nome do cônjuge:<br>
+                <input type="text" name="conjuge_nome">
+            </label><br><br>
+            
+            <label>Data de nascimento:<br>
+                <input type="date" name="conjuge_nascimento">
+            </label><br><br>
+            
+            <label>CPF:<br>
+                <input type="text" name="conjuge_cpf">
+            </label><br><br>
+            
+            <label>Profissão:<br>
+                <input type="text" name="conjuge_profissao">
+            </label><br><br>
+            
+            <label>Telefone:<br>
+                <input type="tel" name="conjuge_telefone">
+            </label><br><br>
+            
+            <label>Possui renda própria?<br>
+                <input type="radio" name="conjuge_renda" value="sim"> Sim<br>
+                <input type="radio" name="conjuge_renda" value="nao"> Não
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Dados Filhos -->
+        <fieldset>
+            <legend>Dados Filhos</legend>
+            <label>Nome do filho(a):<br>
+                <input type="text" name="filho_nome">
+            </label><br><br>
+            
+            <label>Data de nascimento:<br>
+                <input type="date" name="filho_nascimento">
+            </label><br><br>
+            
+            <label>Sexo:<br>
+                <input type="radio" name="filho_sexo" value="masculino"> Masculino<br>
+                <input type="radio" name="filho_sexo" value="feminino"> Feminino
+            </label><br><br>
+            
+            <label>Escola:<br>
+                <input type="text" name="filho_escola">
+            </label><br><br>
+            
+            <label>Série:<br>
+                <input type="text" name="filho_serie">
+            </label><br><br>
+            
+            <label>Atividades extracurriculares:<br>
+                <input type="checkbox" name="atividades[]" value="esporte"> Esporte<br>
+                <input type="checkbox" name="atividades[]" value="musica"> Música<br>
+                <input type="checkbox" name="atividades[]" value="idiomas"> Idiomas<br>
+                <input type="checkbox" name="atividades[]" value="reforco"> Reforço escolar<br>
+                <input type="checkbox" name="atividades[]" value="artes"> Artes
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- Dados Formação Escolar -->
+        <fieldset>
+            <legend>Dados Formação Escolar</legend>
+            <label>Nível de ensino:<br>
+                <input type="radio" name="formacao_nivel" value="fundamental"> Ensino Fundamental<br>
+                <input type="radio" name="formacao_nivel" value="medio"> Ensino Médio<br>
+                <input type="radio" name="formacao_nivel" value="tecnico"> Curso Técnico<br>
+                <input type="radio" name="formacao_nivel" value="superior"> Ensino Superior<br>
+                <input type="radio" name="formacao_nivel" value="pos"> Pós-graduação<br>
+                <input type="radio" name="formacao_nivel" value="mestrado"> Mestrado<br>
+                <input type="radio" name="formacao_nivel" value="doutorado"> Doutorado
+            </label><br><br>
+            
+            <label>Instituição:<br>
+                <input type="text" name="formacao_instituicao">
+            </label><br><br>
+            
+            <label>Curso:<br>
+                <input type="text" name="formacao_curso">
+            </label><br><br>
+            
+            <label>Ano de conclusão:<br>
+                <input type="number" name="formacao_ano" min="1900" max="2024">
+            </label><br><br>
+            
+            <label>Status:<br>
+                <input type="radio" name="formacao_status" value="cursando"> Cursando<br>
+                <input type="radio" name="formacao_status" value="concluido"> Concluído<br>
+                <input type="radio" name="formacao_status" value="trancado"> Trancado<br>
+                <input type="radio" name="formacao_status" value="interrompido"> Interrompido
+            </label><br><br>        
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    
+    <br><br>
+    <hr>
+    <p>desenvolvido por Vanessa Martins</p>
+</body>
+</html>
