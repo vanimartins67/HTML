@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Acadêmico</title>
+</head>
+<body>
+    <h1>Sistema Acadêmico - Cadastro Completo</h1>
+    
+    <form action="enviar_cadastro.php" method="POST" enctype="multipart/form-data">
+        <!-- 1. Dados Pessoais -->
+        <fieldset>
+            <legend>1. Dados Pessoais</legend>
+            
+            <label>Nome:<br>
+                <input type="text" name="nome" size="50" required>
+            </label><br><br>
+            
+            <label>CPF:<br>
+                <input type="text" name="cpf" maxlength="14" placeholder="000.000.000-00">
+            </label><br><br>
+            
+            <label>Data de Nascimento:<br>
+                <input type="date" name="data_nascimento" placeholder="dd/mm/aaaa" maxlength="10">
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 2. Contato -->
+        <fieldset>
+            <legend>2. Contato</legend>
+            
+            <label>E-mail:<br>
+                <input type="email" name="email" placeholder="seu.email@exemplo.com" size="40">
+            </label><br><br>
+            
+            <label>Telefone:<br>
+                <input type="tel" name="telefone" placeholder="(00) 00000-0000">
+            </label><br><br>
+            
+            <label>Endereço:<br>
+                <input type="text" name="endereco" placeholder="Rua, Número, Bairro" size="60">
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 3. Informações Acadêmicas -->
+        <fieldset>
+            <legend>3. Informações Acadêmicas</legend>
+            
+            <label>Matrícula:<br>
+                <input type="text" name="matricula" placeholder="Número da matrícula">
+            </label><br><br>
+            
+            <label>Curso:<br>
+                <input type="text" name="curso" value="ADS" readonly>
+                <small>(Curso fixo: ADS)</small>
+            </label><br><br>
+            
+            <label>Turno:<br>
+                <input type="radio" name="turno" value="matutino"> Matutino<br>
+                <input type="radio" name="turno" value="noturno"> Noturno
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 4. Disciplinas -->
+        <fieldset>
+            <legend>4. Disciplinas</legend>
+            
+            <label>
+                <input type="checkbox" name="disciplinas[]" value="algoritmos"> Algoritmos
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="disciplinas[]" value="banco_dados"> Banco de Dados
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="disciplinas[]" value="engenharia_software"> Engenharia de Software
+            </label><br>
+            
+            <label>
+                <input type="checkbox" name="disciplinas[]" value="ia"> Inteligência Artificial
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 5. Experiência Profissional -->
+        <fieldset>
+            <legend>5. Experiência Profissional</legend>
+            
+            <label>Empresa Atual:<br>
+                <input type="text" name="empresa_atual" size="40">
+            </label><br><br>
+            
+            <label>Cargo:<br>
+                <input type="text" name="cargo" size="30">
+            </label><br><br>
+
+            <label>Tempo na empresa (meses):<br>
+                <input type="number" name="tempo_empresa">
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 6. Habilidades Técnicas -->
+        <fieldset>
+            <legend>6. Habilidades Técnicas</legend>
+            
+            <label>Linguagens:</label><br>
+            <label>
+                <input type="checkbox" name="linguagens[]" value="php"> PHP
+            </label><br>
+            <label>
+                <input type="checkbox" name="linguagens[]" value="python"> Python
+            </label><br>
+            <label>
+                <input type="checkbox" name="linguagens[]" value="java"> Java
+            </label><br>
+            <label>
+                <input type="checkbox" name="linguagens[]" value="javascript"> JavaScript
+            </label><br><br>
+            
+            <label>Tempo de Experiência (meses):<br>
+                <input type="number" name="tempo_experiencia"> 
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 7. Upload de Documentos -->
+        <fieldset>
+            <legend>7. Upload de Documentos</legend>
+            
+            <label>Currículo:<br>
+                <input type="file" name="curriculo">
+            </label><br><br>
+            
+            <label>Histórico Escolar:<br>
+                <input type="file" name="historico">
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <!-- 8. Observações Finais -->
+        <fieldset>
+            <legend>8. Observações Finais</legend>
+            
+            <label>Comentários:<br>
+                <textarea name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui..."></textarea>
+            </label><br><br>
+            
+            <label>Aceito os termos:<br>
+                <input type="checkbox" name="termos" value="concordo"> Concordo com os termos
+            </label>
+        </fieldset>
+        
+        <br>
+        
+        <button type="submit">Enviar Cadastro</button>
+        <button type="reset">Limpar</button>
+    </form>
+    
+    <br><br>
+    <hr>
+    <p>desenvolvido por Vanessa Martins</p>
+</body>
+</html>
