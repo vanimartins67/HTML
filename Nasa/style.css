@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0f1a;
+    color: white;
+}
+
+/* TOPO */
+header {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* LOGO */
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    width: 40px;
+}
+
+/* MENU */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* BANNER */
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+/* SEÇÕES */
+section {
+    padding: 40px;
+    border-bottom: 1px solid gray;
+}
+
+section h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+section p {
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* IMAGENS */
+.img-secao {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #111;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* CONTATO */
+.logo-contato {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+}
+
+.contato-box {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
