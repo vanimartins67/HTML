@@ -102,7 +102,6 @@ section p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: 0.3s;
 }
 
 .card img {
@@ -118,6 +117,7 @@ section p {
 
 .card:hover {
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .logo-contato {
@@ -134,12 +134,4 @@ section p {
     margin: auto;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-footer {
-    background-color: black;
-    text-align: center;
-    padding: 20px;
-    color: #aaa;
-    font-size: 14px;
 }
