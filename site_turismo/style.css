@@ -1,4 +1,4 @@
-/* --- RESET E ESTILOS GERAIS --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* --- CABEÇALHO --- */
+
 .cabecalho {
     background-color: white;
     padding: 15px 0;
@@ -68,7 +68,7 @@ h2 {
     color: #D2691E;
 }
 
-/* --- HERO --- */
+
 .secao-hero {
     display: flex;
     align-items: stretch;
@@ -106,7 +106,7 @@ h2 {
     object-fit: cover;
 }
 
-/* --- BOTÃO (AJUSTADO) --- */
+
 .botao-reservar-simulado {
     display: inline-block;
     padding: 10px 20px;
@@ -119,7 +119,7 @@ h2 {
     align-self: flex-start;
 }
 
-/* --- PONTOS TURÍSTICOS --- */
+
 .secao-spots {
     padding: 100px 0;
 }
@@ -134,10 +134,10 @@ h2 {
     align-items: center;
     gap: 50px;
     margin-bottom: 80px;
-    flex-wrap: wrap; /* evita quebrar */
+    flex-wrap: wrap; 
 }
 
-/* --- IMAGEM CORRIGIDA --- */
+
 .foto-spot {
     width: 480px;
     height: auto;
@@ -157,7 +157,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Inversão */
+
 .foto-direita .foto-spot {
     order: 2;
 }
@@ -165,7 +165,7 @@ h2 {
     order: 1;
 }
 
-/* --- SOBRE --- */
+
 .secao-sobre {
     padding: 80px 0;
     text-align: center;
@@ -185,7 +185,7 @@ h2 {
     margin: 0 auto;
 }
 
-/* --- GASTRONOMIA --- */
+
 .secao-sabores {
     padding: 100px 0;
 }
@@ -224,7 +224,7 @@ h2 {
     color: #8B4513;
 }
 
-/* --- FORMULÁRIO --- */
+
 .secao-contato {
     padding: 60px 0;
     max-width: 500px;
@@ -256,7 +256,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
-/* --- RODAPÉ --- */
+
 .rodape {
     background-color: white;
     color: #3e2723;
