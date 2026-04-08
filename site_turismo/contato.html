@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Reserva - Sonho Pantaneiro</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pag-interna">
+
+<header class="cabecalho">
+    <div class="container-cabecalho">
+        <div class="logo">
+            <h1>Sonho Pantaneiro</h1>
+        </div>
+        <nav class="menu-central">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="index.html#aventuras">Aventuras</a></li>
+                <li><a href="index.html#gastronomia">Culinária</a></li>
+                <li><a href="contato.html">Sua Reserva</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container secao-contato">
+
+    <h2>Planeje sua viagem</h2>
+    <p>Preencha os dados abaixo e entraremos em contato com você.</p>
+
+    <form class="form-reserva">
+
+        <div class="grupo-form">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" required>
+        </div>
+
+        <div class="grupo-form">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="grupo-form">
+            <label for="data">Data da viagem</label>
+            <input type="date" id="data" required>
+        </div>
+
+        <div class="grupo-form">
+            <label for="msg">Observações</label>
+            <textarea id="msg" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="botao-reservar-simulado">
+            Enviar solicitação
+        </button>
+
+    </form>
+
+</main>
+
+<footer class="rodape">
+    <p>Contato: (67) 99999-9999</p>
+    <p>Instagram | Facebook | WhatsApp</p>
+</footer>
+
+</body>
+</html>
