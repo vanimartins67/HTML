@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- *** DEFER *** Ordem de execução -> Espera ambos baixarem e executa na ordem -->
+    <script defer src="script1.js"></script>
+    <script defer src="script2.js"></script>
+    <!-- *** ASYNC *** Sem ordem de execução -> Executa o que baixar primeiro -->
+    <script async src="script1.js"></script>
+    <script async src="script2.js"></script>
+
+    <script>
+        window.alert("Olá, Mundo!");
+    </script>
+
+    <script>
+        window.confirm("Confirma a conclusão?");
+    </script>
+
+    <script>
+        window.prompt("Qual seu nome?");
+    </script>
+
+    <script>
+        //1.Script -> textos
+        let nome = "Ederson";
+        //2.Number -> números inteiros ou decimais
+        let idade = 25;
+        let altura = 1.75;
+        //3.BigInt-> números muito grandes
+        let numeroGigante = 1234567890123456789012345678901234567890n;
+        //4. Boolean -> verdadeiro ou falso
+        let aprovado = true;
+        let ligado = false;
+        //5.Undefined -> variável sem valor definido
+        let endereco;
+        //6.Null -> ausência intencional de valor
+        let telefone = null;
+        //7.Symbol -> identificador único
+        let id = Symbol("id");
+        //8.Object -> conjunto de propriedades
+        let pessoa = {
+            nome: "Carlos",
+            idade: 30
+        }
+    </script>
+
+</body>
+</html>
