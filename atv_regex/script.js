@@ -71,7 +71,7 @@ document.getElementById("formCadastro").addEventListener("submit", function(even
     if(senhaValida.test(senha.value) == false){
 
         document.getElementById("erroSenha").innerHTML =
-        "Senha deve possuir 8 caracteres, letra maiúscula, minúscula e número.";
+        "Senha deve possuir 8 caracteres, letra maiúscula, letra minúscula e número.";
 
         senha.style.border = "2px solid red";
 
